@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>ACCQ (en développement)</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -68,7 +68,7 @@
     </head>
     <body>
    <header>
-            
+
                     <div class="logo"><img class="imgLogo" src="images/logo_ACCQ.png" alt="logoACCQ"></div>
                 <div class="navDiv">
                     <a class="elementNav">Accueil</a>
@@ -81,9 +81,9 @@
                     <a class="elementNav">Réalisations</a>
                     <a class="elementNav">Nous joindre</a>
                 </div>
-            
+
    </header>
-    
+
 
 
 
