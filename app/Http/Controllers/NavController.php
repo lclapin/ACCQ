@@ -61,4 +61,28 @@ class NavController extends Controller
         return view('pages/a_propos');
         
     }
+
+    public function sondage()
+    {
+        return view('pages/sondage');
+        
+    }
+
+    public function constituons()
+    {
+        return view('pages/constituons');
+        
+    }
+
+    public function ateliers()
+    {
+        return view('pages/ateliers');
+        
+    }
+
+    public function rencontres()
+    {
+        return view('pages/rencontres');
+        
+    }
 }

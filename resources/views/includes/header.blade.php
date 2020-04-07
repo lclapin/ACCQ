@@ -7,7 +7,7 @@
                         <li class="deroulant"><a class="elementNav" class="org">Notre organisation<img class="fleche" src="../images/down-arrow.png" alt="fleche"></a>
                             <ul class="sous">
                                 <li><a href=#>OBNL</a></li>
-                                <li><a href=#>Statuts et réglements</a></li>
+                                <li class="petit"><a href=#>Statuts et réglements</a></li>
                             </ul>
                         </li>
                         <li><a class="elementNav" href="{{ route('manifeste') }}">Manifeste</a></li>
@@ -19,7 +19,7 @@
                                 <li><a href=#>Bibliothèque</a></li>
                                 <li><a href=#>Médiathèque</a></li>
                                 <li><a href=#>Promouvoir</a></li>
-                                <li><a href=#>Sondage</a></li>
+                                <li><a href="{{ route('sondage') }}">Sondage</a></li>
                             </ul>
                         </li>
                         <li><a class="elementNav" href="{{ route('discutoire') }}">Discutoire</a></li>

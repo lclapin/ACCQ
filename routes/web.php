@@ -33,4 +33,12 @@ Route::get('pages/nous_joindre', 'NavController@nous_joindre')->name('nous_joind
 
 Route::get('pages/a_propos', 'NavController@a_propos')->name('a_propos');
 
+Route::get('pages/sondage', 'NavController@sondage')->name('sondage');
+
+Route::get('pages/constituons', 'NavController@constituons')->name('constituons');
+
+Route::get('pages/ateliers', 'NavController@ateliers')->name('ateliers');
+
+Route::get('pages/rencontres', 'NavController@rencontres')->name('rencontres');
+
 
