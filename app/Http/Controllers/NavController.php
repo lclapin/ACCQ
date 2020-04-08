@@ -62,6 +62,48 @@ class NavController extends Controller
         
     }
 
+    public function obnl()
+    {
+        return view('pages/obnl');
+        
+    }
+
+    public function statuts_reglements()
+    {
+        return view('pages/statuts_reglements');
+        
+    }
+
+    public function constat()
+    {
+        return view('pages/constat');
+        
+    }
+
+    public function mission()
+    {
+        return view('pages/mission');
+        
+    }
+
+    public function bibliotheque()
+    {
+        return view('pages/bibliotheque');
+        
+    }
+
+    public function mediatheque()
+    {
+        return view('pages/mediatheque');
+        
+    }
+
+    public function promouvoir()
+    {
+        return view('pages/promouvoir');
+        
+    }
+
     public function sondage()
     {
         return view('pages/sondage');

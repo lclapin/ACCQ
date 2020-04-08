@@ -6,19 +6,19 @@
                         <li><a class="elementNav" href="{{ url('/') }}">Accueil</a></li>
                         <li class="deroulant"><a class="elementNav" class="org">Notre organisation<img class="fleche" src="../images/down-arrow.png" alt="fleche"></a>
                             <ul class="sous">
-                                <li><a href=#>OBNL</a></li>
-                                <li class="petit"><a href=#>Statuts et réglements</a></li>
+                                <li><a href="{{ route('obnl') }}">OBNL</a></li>
+                                <li class="petit"><a href="{{ route('statuts_reglements') }}">Statuts et réglements</a></li>
                             </ul>
                         </li>
                         <li><a class="elementNav" href="{{ url('pages/manifeste') }}">Manifeste</a></li>
                         <li><a class="elementNav" href="{{ url('pages/projet_de_loi') }}">Projet de loi</a></li>
                         <li class="deroulant"><a class="elementNav" class="org">Éducation<img class="fleche" src="../images/down-arrow.png" alt="fleche"></a>
                             <ul class="sous">
-                                <li><a href=#>Constat</a></li>
-                                <li><a href=#>Mission</a></li>
-                                <li><a href=#>Bibliothèque</a></li>
-                                <li><a href=#>Médiathèque</a></li>
-                                <li><a href=#>Promouvoir</a></li>
+                                <li><a href="{{ route('constat') }}">Constat</a></li>
+                                <li><a href="{{ route('mission') }}">Mission</a></li>
+                                <li><a href="{{ route('bibliotheque') }}">Bibliothèque</a></li>
+                                <li><a href="{{ route('mediatheque') }}">Médiathèque</a></li>
+                                <li><a href="{{ route('promouvoir') }}">Promouvoir</a></li>
                                 <li><a href="{{ route('sondage') }}">Sondage</a></li>
                             </ul>
                         </li>

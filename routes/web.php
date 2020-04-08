@@ -33,6 +33,20 @@ Route::get('pages/nous_joindre', 'NavController@nous_joindre')->name('nous_joind
 
 Route::get('pages/a_propos', 'NavController@a_propos')->name('a_propos');
 
+Route::get('pages/obnl', 'NavController@obnl')->name('obnl');
+
+Route::get('pages/statuts_reglements', 'NavController@statuts_reglements')->name('statuts_reglements');
+
+Route::get('pages/constat', 'NavController@constat')->name('constat');
+
+Route::get('pages/mission', 'NavController@mission')->name('mission');
+
+Route::get('pages/bibliotheque', 'NavController@bibliotheque')->name('bibliotheque');
+
+Route::get('pages/mediatheque', 'NavController@mediatheque')->name('mediatheque');
+
+Route::get('pages/promouvoir', 'NavController@promouvoir')->name('promouvoir');
+
 Route::get('pages/sondage', 'NavController@sondage')->name('sondage');
 
 Route::get('pages/constituons', 'NavController@constituons')->name('constituons');

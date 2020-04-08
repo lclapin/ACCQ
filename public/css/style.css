@@ -4,7 +4,7 @@
 
 body{
     width: 100%;
-    height: 1000px;
+    height: 100%;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -279,8 +279,141 @@ li:hover .sous{
     padding: 5px;
 }
 
-
 /*Accueil*/
+
+/*OBNL*/
+
+.containerAG{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.AG{
+    width: 1100px;
+}
+
+.titreAG{
+    color: lightseagreen;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.texteAG{
+    color: gray;
+
+}
+
+.texteAG p a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.accederPDFAG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/*OBNL*/
+
+/*Projet de loi*/
+
+.containerProjetLoi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.projetLoi{
+    width: 1100px;
+}
+
+.titrePL{
+    color: lightseagreen;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.projetLoi p{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+}
+
+.titreAC{
+    color: black;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+.projetLoi ol li{
+    color: gray;
+    line-height: 140%;
+}
+
+.titreli{
+    margin-top: 15px;
+    color: black;
+}
+
+
+/*Projet de loi*/
+
+/*Médiathèque*/
+
+.containerMT{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.MT{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreMT{
+    color: lightseagreen;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc5, .bloc6, .bloc7, .bloc8, .bloc9{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.blocVideo{
+    width: 535px;
+    height: 330px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Médiathèque*/
 
 /*Footer*/
 
