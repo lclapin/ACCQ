@@ -5,7 +5,7 @@
 body{
     width: 100%;
     height: 1000px;
-    color: black;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /*header*/
@@ -15,7 +15,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: mediumblue;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
     position: fixed;
 }
 
@@ -51,7 +51,6 @@ nav ul li{
     justify-content: center;
     width: 100%;
     height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: white;
@@ -155,7 +154,7 @@ li:hover .sous{
 }
 
 .titreSondage{
-    color: blue;
+    color: #3332b6;
     font-size: 25px;
     padding-left: 10px;
     padding-top: 20px;
@@ -178,9 +177,9 @@ li:hover .sous{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     height: 70px;
-    background-color: blue;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -201,9 +200,85 @@ li:hover .sous{
 }
 
 .imgRencontres{
+    width: 540px;
+    height: 75px;
+}
+
+.troisiemeBloc{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 30px;
+}
+
+.texteVideo{
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.texteVideo a{
+    text-decoration: none;
+    color: turquoise;
+}
+
+.imgManifeste{
+    width: 500px;
+    height: 75px;
+    padding-top: 20px;
+}
+
+.imgMembre{
     width: 500px;
     height: 75px;
 }
+
+.texteFB{
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.regions{
+    width: 550px;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.regionsPar3{
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.regionsPar2{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.region{
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+}
+
+.region a{
+    text-decoration: none;
+    color: black;
+}
+
+.imgRegion{
+    width: 140px;
+    height: 100px;
+    padding: 5px;
+}
+
 
 /*Accueil*/
 

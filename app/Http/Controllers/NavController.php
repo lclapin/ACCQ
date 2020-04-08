@@ -85,4 +85,11 @@ class NavController extends Controller
         return view('pages/rencontres');
         
     }
+
+    public function devenir_membre()
+    {
+        return view('pages/devenir_membre');
+        
+    }
+
 }
