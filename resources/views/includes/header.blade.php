@@ -4,15 +4,15 @@
                 <nav>
                     <ul class="navPrinc">
                         <li><a class="elementNav" href="{{ url('/') }}">Accueil</a></li>
-                        <li class="deroulant"><a class="elementNav" class="org">Notre organisation<img class="fleche" src="../images/down-arrow.png" alt="fleche"></a>
+                        <li class="deroulant"><a class="elementNav" class="org">Notre organisation<img class="fleche" src="../images/down-arrow1.png" alt="fleche"></a>
                             <ul class="sous">
                                 <li><a href="{{ route('obnl') }}">OBNL</a></li>
-                                <li class="petit"><a href="{{ route('statuts_reglements') }}">Statuts et réglements</a></li>
+                                <li class="petit"><a href="{{ route('statuts_reglements') }}">Règlements</a></li>
                             </ul>
                         </li>
                         <li><a class="elementNav" href="{{ url('pages/manifeste') }}">Manifeste</a></li>
                         <li><a class="elementNav" href="{{ url('pages/projet_de_loi') }}">Projet de loi</a></li>
-                        <li class="deroulant"><a class="elementNav" class="org">Éducation<img class="fleche" src="../images/down-arrow.png" alt="fleche"></a>
+                        <li class="deroulant"><a class="elementNav" class="org">Éducation<img class="fleche" src="../images/down-arrow1.png" alt="fleche"></a>
                             <ul class="sous">
                                 <li><a href="{{ route('constat') }}">Constat</a></li>
                                 <li><a href="{{ route('mission') }}">Mission</a></li>

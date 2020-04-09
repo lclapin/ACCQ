@@ -38,7 +38,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 1400px;
+    width: 1270px;
     list-style-type: none;
 }
 nav ul li{
@@ -49,9 +49,10 @@ nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 150px;
     height: 50px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
     color: white;
 
@@ -95,7 +96,7 @@ li:hover .sous{
 }
 
 .petit a{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .sous li a{
@@ -107,7 +108,7 @@ li:hover .sous{
 .sous li a:hover{
     width: 100%;
     display: block;
-    background-color: lightseagreen;
+    background-color: #317EAC;
     opacity: 0.5;
 }
 
@@ -162,7 +163,7 @@ li:hover .sous{
 
 .texteSondage{
     font-size: 18px;
-    color: gray;
+    color: #333;
     padding: 10px;
 }
 
@@ -265,7 +266,7 @@ li:hover .sous{
 .region{
     width: 150px;
     height: 150px;
-    border: 1px solid gray;
+    border: 1px solid #333;
 }
 
 .region a{
@@ -295,14 +296,14 @@ li:hover .sous{
 }
 
 .titreAG{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 40px;
 }
 
 .texteAG{
-    color: gray;
+    color: #333;
 
 }
 
@@ -345,7 +346,7 @@ li:hover .sous{
 }
 
 .titrePL{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -353,7 +354,7 @@ li:hover .sous{
 
 .projetLoi p{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
@@ -366,7 +367,7 @@ li:hover .sous{
 }
 
 .projetLoi ol li{
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
@@ -392,7 +393,7 @@ li:hover .sous{
 }
 
 .titreConstat{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -410,6 +411,7 @@ li:hover .sous{
     width: 7px;
     height: 80px;
     background-color: silver;
+    opacity: 0.3;
 }
 
 .citation{
@@ -417,18 +419,18 @@ li:hover .sous{
     display: flex;
     align-items: center;
     font-size: 22px;
-    color: lightseagreen;
+    color: #317EAC;
 }
 
 .constat p{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
 .constat ol li{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
@@ -457,7 +459,7 @@ li:hover .sous{
 }
 
 .titreBT{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -480,7 +482,7 @@ li:hover .sous{
 
 .documents ul li{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
@@ -502,7 +504,7 @@ li:hover .sous{
 }
 
 .islande{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 22px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -510,12 +512,12 @@ li:hover .sous{
 
 .texteIslande{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
 .constitutions p{
-    color: gray;
+    color: #333;
 }
 
 .constitutions a{
@@ -528,7 +530,7 @@ li:hover .sous{
 }
 
 .titreAutresConstitutions{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 22px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -552,7 +554,7 @@ li:hover .sous{
 }
 
 .titreMT{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -591,7 +593,7 @@ li:hover .sous{
 }
 
 .titrePromouvoir{
-    color: lightseagreen;
+    color: #317EAC;
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -614,7 +616,7 @@ li:hover .sous{
 
 .porter p{
     font-size: 20px;
-    color: gray;
+    color: #333;
 }
 
 
@@ -629,14 +631,14 @@ li:hover .sous{
 
 .tracts ol li{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
     font-size: 20px;
 }
 
 .tracts ol li ul li{
     text-align: justify;
-    color: gray;
+    color: #333;
     line-height: 140%;
 }
 
@@ -656,6 +658,228 @@ li:hover .sous{
 
 
 /*Promouvoir*/
+
+/*Discutoire*/
+
+.containerDiscutoire{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.discutoire{
+    width: 1100px;
+}
+
+.titreDiscutoire{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.BM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bienvenue{
+    width: 640px;
+}
+
+.texteEntete{
+    font-size: 25px;
+}
+
+.bienvenue p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    font-size: 18px;
+}
+
+.bienvenue ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    font-size: 18px;
+}
+
+.texteEntete{
+    font-size: 23px;
+    text-align: justify;
+    line-height: 140%;
+}
+
+.titreConseil, .titreInstaller{
+    color: #317EAC;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.imgMumble{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.installation, .son, .rejoindre{
+    color: #317EAC;
+    font-size: 20px;
+}
+
+.bienvenue a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.bienvenue a:hover{
+    text-decoration: underline;
+}
+
+/*Discutoire*/
+
+/*Médias*/
+
+.containerMedias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.medias{
+    width: 1100px;
+}
+
+.titreMedias{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.titreCommunique{
+    color: #317EAC;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.titreCommunique ul li{
+    color: deepskyblue;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.medias a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.medias a:hover{
+    text-decoration: underline;
+}
+
+/*Médias*/
+
+/*Nous joindre*/
+
+.containerNJ{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.NJ{
+    width: 1100px;
+}
+
+.titreNJ{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.CR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.composition{
+    width: 520px;
+}
+
+.composition p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.composition ul li{
+    color: #333;
+    line-height: 140%;
+}
+
+.admin{
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+
+.composition a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.composition a:hover{
+    text-decoration: underline;
+}
+
+.responsabilites{
+    width: 520px;
+}
+
+.responsabilites p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.responsabilites ul{
+    margin-bottom: 20px;
+}
+
+.responsabilites ul li{
+    color: #333;
+    line-height: 140%;
+}
+
+.responsabilites a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.responsabilites a:hover{
+    text-decoration: underline;
+}
+
+.NJ p{
+    margin-top: 20px;
+    color: #333;
+}
+
+
+/*Nous joindre*/
 
 /*Footer*/
 
