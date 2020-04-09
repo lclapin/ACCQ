@@ -311,6 +311,10 @@ li:hover .sous{
     color: deepskyblue;
 }
 
+.texteAG p a:hover{
+    text-decoration: underline;
+}
+
 .accederPDFAG{
     display: flex;
     align-items: center;
@@ -374,6 +378,164 @@ li:hover .sous{
 
 /*Projet de loi*/
 
+/*Constat*/
+
+.containerConstat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.constat{
+    width: 1100px;
+}
+
+.titreConstat{
+    color: lightseagreen;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.barreCit{
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.barre{
+    width: 7px;
+    height: 80px;
+    background-color: silver;
+}
+
+.citation{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: lightseagreen;
+}
+
+.constat p{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+}
+
+.constat ol li{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+}
+
+.constat p a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.constat p a:hover{
+    text-decoration: underline;
+}
+
+/*Constat*/
+
+/*Bibliothèque*/
+
+.containerBT{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.BT{
+    width: 1100px;
+}
+
+.titreBT{
+    color: lightseagreen;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.DC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.documents{
+    width: 520px;
+}
+
+.titreDocuments{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.documents ul li{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+}
+
+.documents a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.documents a:hover{
+    text-decoration: underline;
+}
+
+.constitutions{
+    width: 520px;
+}
+
+.titreConstitutions{
+    font-size: 28px;
+}
+
+.islande{
+    color: lightseagreen;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.texteIslande{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+}
+
+.constitutions p{
+    color: gray;
+}
+
+.constitutions a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.constitutions a:hover{
+    text-decoration: underline;
+}
+
+.titreAutresConstitutions{
+    color: lightseagreen;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*Bibliothèque*/
+
 /*Médiathèque*/
 
 .containerMT{
@@ -414,6 +576,86 @@ li:hover .sous{
 
 
 /*Médiathèque*/
+
+/*Promouvoir*/
+
+.containerPromouvoir{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.promouvoir{
+    width: 1100px;
+}
+
+.titrePromouvoir{
+    color: lightseagreen;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.PT{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.porter{
+    width: 520px;
+}
+
+.titrePorter{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.porter p{
+    font-size: 20px;
+    color: gray;
+}
+
+
+.tracts{
+    width: 670px;
+}
+
+.titreTracts{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tracts ol li{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+    font-size: 20px;
+}
+
+.tracts ol li ul li{
+    text-align: justify;
+    color: gray;
+    line-height: 140%;
+}
+
+.imgPDF{
+    width: 25px;
+    height: 25px;
+}
+
+.tracts a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.tracts a:hover{
+    text-decoration: underline;
+}
+
+
+/*Promouvoir*/
 
 /*Footer*/
 

@@ -57,6 +57,7 @@ Route::get('pages/rencontres', 'NavController@rencontres')->name('rencontres');
 
 Route::get('pages/devenir_membre', 'NavController@devenir_membre')->name('devenir_membre');
 
+Route::get('pages/listeOR', 'NavController@listeOR')->name('listeOR');
 
 
 /*Régions*/

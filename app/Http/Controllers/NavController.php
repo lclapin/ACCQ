@@ -134,4 +134,9 @@ class NavController extends Controller
         
     }
 
+    public function listeOR()
+    {
+        return view('pages/listeOR');
+        
+    }
 }
