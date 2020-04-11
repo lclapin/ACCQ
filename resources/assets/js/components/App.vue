@@ -1,7 +1,8 @@
 <template>
+<div>
  <fish-menu mode="horizontal" defaultActive="1">
-  <fish-option index="0" content="Content"></fish-option>
-  <fish-option index="1" content="User"></fish-option>
+  <fish-option index="0" content="Home"  v-on:click="home()"></fish-option>
+  <fish-option index="1" content="Manifeste" v-on:click="manifeste()"></fish-option>
   <fish-option index="2" content="Tongji"></fish-option>
   <fish-submenu index="3">
     <template slot="title">submenu</template>
@@ -19,10 +20,22 @@
     <fish-option index="3-5" content="Option-5">Option-5</fish-option>
   </fish-submenu>
 </fish-menu>
+<router-view></router-view>
+</div>
+
+
 </template>
 <script>
   export default {
-    name: 'app'
+    name: 'app',
+     methods: {
+            home: function(){
+                this.$router.push('/')
+        },
+        manifeste: function(){
+                this.$router.push('/pages/manifeste')
+        }
+    }
   }
 </script>
 <style>
