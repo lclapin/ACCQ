@@ -4,7 +4,7 @@
     <body>
         <div id="app">
             <div>
-                <test></test>
+                <app></app>
             </div>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
