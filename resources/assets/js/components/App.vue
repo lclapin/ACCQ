@@ -45,24 +45,24 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-item active-class to="/pages/home" href="#" class="h5 middle-vert">Accueil</b-nav-item>
         <b-nav-item-dropdown text="Notre organisation" class="middle-vert">
-                    <b-dropdown-item to="/pages/home" href="#">OBNL</b-dropdown-item>
-                    <b-dropdown-item to="/pages/home" href="#">Règlements</b-dropdown-item>
+                    <b-dropdown-item to="/pages/obnl" href="#">OBNL</b-dropdown-item>
+                    <b-dropdown-item to="/pages/statuts" href="#">Règlements</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item active-class to="/pages/manifeste" href="#" class="h5 middle-vert">Manifeste</b-nav-item>
-                <b-nav-item active-class to="/pages/home" href="#" class="h5 middle-vert">Projet de loi</b-nav-item>
+                <b-nav-item active-class to="/pages/projet_de_loi" href="#" class="h5 middle-vert">Projet de loi</b-nav-item>
                 <b-nav-item-dropdown text="Éducation" class="middle-vert">
-                    <b-dropdown-item to="/pages/home" href="#">Constat</b-dropdown-item>
-                    <b-dropdown-item to="/pages/home" href="#">Mission</b-dropdown-item>
-                    <b-dropdown-item to="/pages/home" href="#">Bibliothèque</b-dropdown-item>
-                    <b-dropdown-item to="/pages/home" href="#">Médiathèque</b-dropdown-item>
-                    <b-dropdown-item to="/pages/home" href="#">Promouvoir</b-dropdown-item>
-                    <b-dropdown-item to="/pages/home" href="#">Sondage</b-dropdown-item>
+                    <b-dropdown-item to="/pages/constat" href="#">Constat</b-dropdown-item>
+                    <b-dropdown-item to="/pages/mission" href="#">Mission</b-dropdown-item>
+                    <b-dropdown-item to="/pages/bibliotheque" href="#">Bibliothèque</b-dropdown-item>
+                    <b-dropdown-item to="/pages/mediatheque" href="#">Médiathèque</b-dropdown-item>
+                    <b-dropdown-item to="/pages/promouvoir" href="#">Promouvoir</b-dropdown-item>
+                    <b-dropdown-item to="/pages/sondage" href="#">Sondage</b-dropdown-item>
                 </b-nav-item-dropdown>
 
-                <b-nav-item active-class to="/pages/home" class="h5 middle-vert" href="#" >Discutoire</b-nav-item>
-                <b-nav-item active-class to="/pages/manifeste" class="h5 middle-vert" href="#">Médias</b-nav-item>
-                <b-nav-item active-class to="/pages/manifeste" class="h5 middle-vert" href="#">Réalisations</b-nav-item>
-                <b-nav-item active-class to="/pages/manifeste" class="h5 middle-vert" href="#">Nous joindre</b-nav-item>
+                <b-nav-item active-class to="/pages/discutoire" class="h5 middle-vert" href="#" >Discutoire</b-nav-item>
+                <b-nav-item active-class to="/pages/medias" class="h5 middle-vert" href="#">Médias</b-nav-item>
+                <b-nav-item active-class to="/pages/realisations" class="h5 middle-vert" href="#">Réalisations</b-nav-item>
+                <b-nav-item active-class to="/pages/nous_joindre" class="h5 middle-vert" href="#">Nous joindre</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->

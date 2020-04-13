@@ -4,7 +4,21 @@ import { sync } from 'vuex-router-sync'
 import VueRouter from 'vue-router'
 import store from './store'
 import Test from './components/Test.vue';
+import Manifeste from './components/manifeste.vue';
 import Home from './components/Home.vue';
+import Obnl from './components/obnl';
+import Statuts from './components/statuts_reglements';
+import Projet from './components/projet';
+import Constat from './components/constat';
+import Mission from './components/mission';
+import Bibliotheque from './components/bibliotheque';
+import Mediatheque from './components/mediatheque';
+import Promouvoir from './components/promouvoir';
+import Sondage from './components/sondage';
+import Discutoire from './components/discutoire';
+import Media from './components/media';
+import Realisations from './components/realisations';
+import Nous_joindre from './components/nous_joindre';
 require('./bootstrap');
 
 
@@ -33,21 +47,21 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes: [
       { path: '/', name: 'home', component: Home },
-      { path: '/pages/manifeste', name: 'manifeste', component: Test },
-      { path: '/pages/projet_de_loi', component: Test },
-      { path: '/pages/discutoire', component: Test },
-      { path: '/pages/medias', component: Test },
-      { path: '/pages/realisations', component: Test },
-      { path: '/pages/nous_joindre', component: Test },
+      { path: '/pages/manifeste', name: 'manifeste', component: Manifeste },
+      { path: '/pages/projet_de_loi', component: Projet },
+      { path: '/pages/discutoire', component: Discutoire },
+      { path: '/pages/medias', component: Media },
+      { path: '/pages/realisations', component: Realisations },
+      { path: '/pages/nous_joindre', component: Nous_joindre },
       { path: '/pages/a_propos', component: Test },
-      { path: '/pages/obnl', component: Test },
-      { path: '/pages/statuts', component: Test },
-      { path: '/pages/constat', component: Test },
-      { path: '/pages/mission', component: Test },
-      { path: '/pages/bibliotheque', component: Test },
-      { path: '/pages/mediatheque', component: Test },
-      { path: '/pages/promouvoir', component: Test },
-      { path: '/pages/sondage', component: Test ,  meta: { auth: false, title: 'home',index:"2" }},
+      { path: '/pages/obnl', component: Obnl },
+      { path: '/pages/statuts', component: Statuts },
+      { path: '/pages/constat', component: Constat },
+      { path: '/pages/mission', component: Mission },
+      { path: '/pages/bibliotheque', component: Bibliotheque },
+      { path: '/pages/mediatheque', component: Mediatheque },
+      { path: '/pages/promouvoir', component: Promouvoir },
+      { path: '/pages/sondage', component: Sondage ,  meta: { auth: false, title: 'home',index:"2" }},
       { path: '/pages/constituons', component: Test },
       { path: '/pages/ateliers', component: Test },
       { path: '/pages/rencontres', component: Test },
