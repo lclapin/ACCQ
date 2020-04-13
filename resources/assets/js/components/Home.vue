@@ -10,7 +10,7 @@
             Votre participation à ce sondage nous aidera à mener à bien notre mission.
             </p>
             <div class="repondre">
-                <router-link to='pages/sondage' >Répondre au sondage maintenant</router-link>
+                <router-link to='pages/manifeste' >Répondre au sondage maintenant</router-link>
             </div>
         </div>
         <div class="constituons">
