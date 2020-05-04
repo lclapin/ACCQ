@@ -1,0 +1,4941 @@
+*{
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    position: fixed;
+    z-index: 1000;
+}
+
+.header2{
+    background-color: #1995dc;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.premier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px; 
+}
+
+.imgLogo{
+    width: 50px;
+    height: 50px;
+}
+
+nav{
+    height: 50px;
+    color: white;
+}
+
+.navPrinc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1270px;
+    list-style-type: none;
+}
+
+.premierA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.navPrincA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    list-style-type: none;
+}
+
+
+
+nav ul li{
+    width: 100%;
+}
+
+.elementNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.elementNavA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.elementNavA:hover{
+    background-color: darkblue;
+}
+
+
+nav ul li .current{
+    background-color: darkblue;
+}
+
+.active, .elementNav:hover{
+    background-color: darkblue;
+}
+
+
+.fleche{
+    width: 20px;
+    height: 20px;
+}
+
+.sous1,
+.sous2{
+   /* height: 0;
+    opacity: 0;*/
+    display: none;
+    position: absolute;
+    color: black;
+    z-index: 1000;
+    text-align: left;
+    min-width: 150px;
+    transition: all .3s ease;
+    background-color: #f1f1f1;
+    border: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+}
+
+/*.deroulant1:hover .sous1{
+    height: 80px;
+  opacity: 1;
+    transform: translateY(100);
+}
+
+.deroulant2:hover .sous2{
+    height: 230px;
+  opacity: 1;
+    transform: translateY(100);
+}*/
+
+.sous1 a,
+.sous2 a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sous1 a:hover,
+.sous2 a:hover{
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.buttonNav{
+    width: 40px;
+    height: 40px;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    border: 1px #022f5a solid;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: none;
+}
+
+.BN{
+    width: 25px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+
+.barreN{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+#navPrinc2{
+    display: none;
+}
+
+/*header*/
+
+/*Bannières*/
+
+.imgBanniere{
+    width: 100%;
+    height: auto;
+    padding-top: 45px;
+}
+
+.banniere2{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+/*Bannières*/
+
+/*Accueil*/
+
+.blocPrincipal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.premierBloc{
+    width: 1100px;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sondage2{
+    width: 500px;
+    height: 280px;
+    border: 1px solid lightskyblue;
+}
+
+.titreSondage2{
+    color: #3332b6;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.texteSondage2{
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+}
+
+.repondre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.repondre a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 70px;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.organigrammeA{
+    width: 540px;
+    height: 280px;
+    border: 1px #3332b6 solid;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    font-size: 24px;
+    text-align: center;
+}
+
+.lienOrg{
+    width: 540px;
+    height: 280px;
+    /*color: #3332b6;*/
+    color: white;
+    text-decoration: none;
+}
+
+.consulter{
+    margin-top: 20px;
+}
+
+.imgOrg{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.deuxiemeBloc{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.imgAteliers{
+    width: 500px;
+    height: 75px;
+}
+
+.imgRencontres{
+    width: 540px;
+    height: 75px;
+}
+
+.troisiemeBloc{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 30px;
+}
+
+.videoC1{ 
+    width: 495px;
+    height: 315px;
+}
+
+.texteVideo{
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.texteVideo a{
+    text-decoration: none;
+    color: turquoise;
+}
+
+.imgManifeste{
+    width: 500px;
+    height: 75px;
+    padding-top: 20px;
+}
+
+.imgMembre{
+    width: 500px;
+    height: 75px;
+}
+
+.texteFB{
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.regions{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+
+}
+
+.region{
+    width: 150px;
+    height: 170px;
+    border: 1px solid #333;
+    z-index: 0;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.region a, 
+.regionPlus a{
+    text-decoration: none;
+    color: black;
+}
+
+.imgRegion{
+    width: 140px;
+    height: 100px;
+    padding: 5px;
+
+}
+
+.texteRegion{
+    font-size: 15px;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #317EAC;
+    opacity: 0.7;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .region:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .regionPlus:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/*Accueil*/
+
+
+
+/*Entête Pages*/
+
+.containerPage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.page{
+    width: 1100px;
+}
+
+.titrePage{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.barreP{
+    width: 100%;
+    height: 1px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.page p,
+.page ol li,
+.page ul li{
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+    line-height: 140%;
+}
+
+.page a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.page a:hover{
+    text-decoration: underline;
+}
+
+/*Entête Pages*/
+
+/*Fil d'Ariane*/
+
+.ariane{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    background-color: #f5f5f5;
+    color: gray;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.ariane li:first-of-type{
+    margin-left: -30px;
+}
+
+.page .ariane li{
+    color: gray;
+}
+
+.ariane li a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.ariane li a:hover{
+    text-decoration: underline;
+}
+
+/*Fil d'Ariane*/
+
+/*Ateliers*/
+
+.containerAtelier{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.atelier{
+    width: 1100px;
+}
+
+.titreAtelier{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+/*Ateliers*/
+
+/*Rencontres*/
+
+.containerRencontres{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.rencontres1{
+    width: 1100px;
+}
+
+.titreRencontres{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.rencontres1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+/*Rencontres*/
+
+/*Devenir membre*/
+
+.containerDM{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.DM{
+    width: 1100px;
+}
+
+.titreDM{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.DM a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+/*Devenir membre*/
+
+/*OBNL*/
+
+.containerAG{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.AG{
+    width: 1100px;
+}
+
+.titreAG{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.texteAG{
+    color: #333;
+
+}
+
+.texteAG p a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.texteAG p a:hover{
+    text-decoration: underline;
+}
+
+.accederPDFAG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.accederPDFAG a{
+    color: white;
+}
+
+.accederPDFAG a:hover{
+    text-decoration: none;
+}
+
+/*OBNL*/
+
+/*Règlements*/
+
+.containerReglements{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.reglements{
+    width: 1100px;
+}
+
+.titreReglements{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.PDF{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PDF a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+    padding-bottom: 15px;
+}
+
+.SRE{
+    width: 1000px;
+    height: 800px;
+}
+
+/*Règlements*/
+
+/*Manifeste*/
+.CS{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1300px;
+}
+
+.constitution1{
+    width: 700px;
+}
+
+.titreConstitution{
+    width: 700px;
+    height: 60px;
+    background-color:rgba(139, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.imgI{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.titreConstitution p{
+   color: darkred;
+   opacity: 1;
+   font-size: 18px;
+}
+
+.constitution1{
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+    line-height: 140%;
+}
+
+.constitution1 a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+    padding-bottom: 15px;
+}
+
+.constitution1 a:hover{
+    text-decoration: underline;
+}
+
+.signatures{
+    width: 350px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.voirS{
+    width: 200px;
+    height: 40px;
+    background-image: linear-gradient(#54b4eb, #2FA4E7 60%, #1d9ce5);
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voirS a{
+    color: white;
+    text-decoration: none;
+}
+
+.DS{
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.barreSM{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.nomDate{
+    margin-top: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.SF{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jeSigne{
+    width: 520px;
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+}
+
+.titreJS{
+    color: #317EAC;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.TF{
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texteJSP2{
+    width: 420px;
+}
+
+.imgFD{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.lesInputs{
+    width: 520px;
+    height: 410px;
+    background-color: rgba(192, 192, 192, 0.3);
+    margin-top: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+input[type=text]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=submit]{
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #73A839;
+    border-color: #73A839;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+    border:0 none;
+    outline:0;
+}
+
+/*Manifeste*/
+
+/*Signatures manifeste*/
+
+.containerSM{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.SM{
+    width: 1100px;
+}
+
+.titreSM{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.tableSMP{
+    width: 100%;
+}
+
+.toutSMP{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreSMP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nomC{
+    width: 240px;
+    text-align: left;
+}
+
+.dateSM{
+    width: 200px;
+    text-align: left;
+}
+
+.barreSMP{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.idNomDate{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SMid{
+    width: 50px;
+    text-align: left;
+}
+
+.SMnom{
+    width: 200px;
+    text-align: left;
+}
+
+.SMdate{
+    width: 200px;
+    text-align: left;
+}
+
+.donnesS{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Signatures manifeste*/
+
+/*Projet de loi*/
+
+.projetLoi p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.titreAC{
+    color: black;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+.projetLoi ol li{
+    color: #333;
+    line-height: 140%;
+}
+
+.titreli{
+    margin-top: 15px;
+    color: black;
+}
+
+
+/*Projet de loi*/
+
+/*Constat*/
+
+.containerConstat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.constat{
+    width: 1100px;
+}
+
+.titreConstat{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.barreCit{
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.barre{
+    width: 7px;
+    height: 80px;
+    background-color: silver;
+    opacity: 0.3;
+}
+
+.citation{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #317EAC;
+}
+
+.constat p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.constat ol li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.constat p a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.constat p a:hover{
+    text-decoration: underline;
+}
+
+/*Constat*/
+
+/*Mission*/
+
+
+.mission p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+
+
+.mission a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.mission a:hover{
+    text-decoration: underline;
+}
+
+.navMission li, .navMission li a{
+    list-style-type: none;
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.navMission li a:hover{
+    text-decoration: none;
+}
+
+.navPM{
+    margin-left: -40px;
+}
+
+.navMission{
+    display: flex;
+    flex-direction: row;
+}
+
+.elementNavM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px silver solid;
+}
+
+.navMission li .activeM{
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    color: white;
+}
+
+.titreM{
+    font-size: 28px;
+    margin-top: 30px;
+    
+}
+
+.barreM{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 20px;
+}
+
+.contenu ul li{
+    list-style-type: disc;
+}
+
+.contenu ul li a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.contenu ul li a:hover{
+    text-decoration: underline;
+}
+
+.titreOb{
+    font-size: 28px;
+    color: #317EAC;
+    margin-bottom: 10px;
+}
+
+.objectifsNo{
+    color: #317EAC;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.moyens{
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.barreCit1{
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.barre1{
+    width: 7px;
+    height: 80px;
+    background-color: silver;
+    opacity: 0.3;
+    margin-right: 15px;
+}
+
+.citation1{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #317EAC;
+}
+
+/*Mission*/
+
+/*Bibliothèque*/
+
+.containerBT{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.BT{
+    width: 1100px;
+}
+
+.titreBT{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.DC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.documents{
+    width: 520px;
+}
+
+.titreDocuments{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.documents ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.documents a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.documents a:hover{
+    text-decoration: underline;
+}
+
+.constitutions{
+    width: 520px;
+}
+
+.titreConstitutions{
+    font-size: 28px;
+}
+
+.islande{
+    color: #317EAC;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.texteIslande{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.constitutions p{
+    color: #333;
+}
+
+.constitutions a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.constitutions a:hover{
+    text-decoration: underline;
+}
+
+.titreAutresConstitutions{
+    color: #317EAC;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*Bibliothèque*/
+
+/*Médiathèque*/
+
+
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc5, .bloc6, .bloc7, .bloc8, .bloc9{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.blocVideo{
+    width: 535px;
+    height: 330px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoM{
+    width: 520px;
+    height: 290px;
+}
+
+
+/*Médiathèque*/
+
+/*Promouvoir*/
+
+
+.PT{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.porter{
+    width: 520px;
+}
+
+.titrePorter{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.porter p{
+    font-size: 20px;
+    color: #333;
+}
+
+
+.tracts{
+    width: 670px;
+}
+
+.titreTracts{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tracts ol li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    font-size: 20px;
+}
+
+.tracts ol li ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.imgPDF{
+    width: 25px;
+    height: 25px;
+}
+
+.tracts a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.tracts a:hover{
+    text-decoration: underline;
+}
+
+
+/*Promouvoir*/
+
+/*Sondage*/
+
+.containerSondage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sondage1{
+    width: 1100px;
+}
+
+.titreSondage{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.sondage1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.sondage1 a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.sondage1 a:hover{
+    text-decoration: underline;
+}
+
+.ES{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    color: white;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ES a{
+    color: white;
+    text-decoration: none;
+}
+
+.ES a:hover{
+    text-decoration: none;
+}
+
+/*Sondage*/
+
+/*Discutoire*/
+
+
+.BM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bienvenue{
+    width: 640px;
+}
+
+.texteEntete{
+    font-size: 25px;
+}
+
+.bienvenue p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    font-size: 18px;
+}
+
+.bienvenue ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    font-size: 18px;
+}
+
+.texteEntete{
+    font-size: 23px;
+    text-align: justify;
+    line-height: 140%;
+}
+
+.titreConseil{
+    color: #317EAC;
+    font-size: 25px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.titreInstaller{
+    color: #317EAC;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.imgMumble{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.installation, .son, .rejoindre{
+    color: #317EAC;
+    font-size: 20px;
+}
+
+.bienvenue a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.bienvenue a:hover{
+    text-decoration: underline;
+}
+
+/*Discutoire*/
+
+/*Médias*/
+
+.containerMedias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.medias{
+    width: 1100px;
+}
+
+.titreMedias{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.titreCommunique{
+    color: #317EAC;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.titreCommunique ul li{
+    color: #2FA4E7
+    ;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.medias a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.medias a:hover{
+    text-decoration: underline;
+}
+
+/*Médias*/
+
+/*Réalisations*/
+
+.contenuRea{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.engagement{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgPoint{
+    width: 40px;
+    height: 40px;
+}
+
+.titreEG{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: darkred;
+}
+
+.titreEG a{
+    text-decoration: none;
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+.listePC{
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.listePCC, .listePCP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#c6352b, #A52C24 60%, #942820);
+    color: white;
+    font-size: 15px;
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.listePCC a, .listePCP a, .PLC a{
+    color: white;
+    text-decoration: none;
+}
+
+.listePCC a:hover, .listePCP a:hover, .PLC a:hover{
+    text-decoration: none;
+}
+
+.PLC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+    color: white;
+    font-size: 15px;
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.containerConstituons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.constituons1{
+    width: 1100px;
+}
+
+.titreConstituons{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.titreCanevas{
+    color: #317EAC;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.constituons1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.constituons1 a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.constituons1 a:hover{
+    text-decoration: underline;
+}
+
+.videoC{
+    width: 560px;
+    height: 315px;
+}
+.canevas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Réalisations*/
+
+/* Liste PCC*/
+
+.titreDec{
+    font-size: 22px;
+    color: #317EAC;
+}
+
+.nomRegion{
+    font-size: 20px;
+    color: #317EAC;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Liste PCC*/
+
+/*Engagement*/
+
+
+.engagement1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.engagement1 p a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.engagement1 p a:hover{
+    text-decoration: underline;
+}
+
+.unissons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    width: 100%;
+    height: 70px;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #3a87ad;
+}
+
+.engagement1 ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.engagement1 ul li a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.engagement1 ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Engagement*/
+
+/*Convocation*/
+
+.containerConvocation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.convocation1{
+    width: 1100px;
+}
+
+.titreConvocation{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.titrePreambule{
+    color: #317EAC;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.titreArticle{
+    font-size: 22px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+
+}
+
+.convocation1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.convocation1 p a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.convocation1 p a:hover{
+    text-decoration: underline;
+}
+
+.convocation1 ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.convocation1 ul li a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.convocation1 ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Convocation*/
+
+/*Requêtes et recommandations*/
+
+.containerRequetes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.requetes1{
+    width: 1100px;
+}
+
+.titreRequetes{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.titreArticle{
+    font-size: 22px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+
+}
+
+.requetes1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.requetes1 ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+/*Requêtes et recommandations*/
+
+/*Appel*/
+
+
+
+.AF{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1300px;
+}
+
+.appelQuebec{
+    width: 700px;
+}
+
+.titreAQ{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #3a87ad;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titreAQ2{
+    color: #317EAC;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.appel1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.signez a{
+    font-size: 18px;
+}
+
+.appel1 a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.appel1 a:hover{
+    text-decoration: underline;
+}
+
+.CPI{
+    width: 100%;
+    height: 70px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.CPI a{
+    color: #b94a48;
+    text-decoration: none;
+}
+
+.CPI a:hover{
+    text-decoration: underline;
+}
+
+.AF{
+    display: flex;
+    flex-direction: row;
+}
+
+.formLiens{
+    width: 330px;
+}
+
+.titreSA{
+    font-size: 22px;
+}
+
+.barreSA{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 20px;
+}
+
+.texteSA{
+    width: 330px;
+    color: gray;
+}
+
+.form2{
+    width: 330px;
+    height: 470px;
+    background-color: rgba(192, 192, 192, 0.3);
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+
+
+.form2 input[type=text]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.BR{
+    border: 1px red solid;
+}
+
+.nomComplet{
+    display: flex;
+    flex-direction: row;
+}
+
+.nomComplet input[type=text]{
+    width: 90%;
+}
+
+.prenom, .nom{
+
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.form2 input[type=submit]{
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #73A839;
+    border-color: #73A839;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+    border:0 none;
+    outline:0;
+}
+
+.NE{
+    width: 300px;
+    height: 170px;
+    font-size: 17px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.liens{
+    width: 330px;
+}
+
+/*Appel*/
+
+/*Devenir partanaire*/
+
+.containerDevenir{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 450px;
+}
+
+.devenir{
+    width: 1100px;
+}
+
+.titreDevenir{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.devenir p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.devenir a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+/*Devenir partanaire*/
+
+/*Constitution*/
+
+.containerConstitution2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.constitution2{
+    width: 1100px;
+}
+
+.titreConstitution2{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.constitution2 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.constitution2 a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.constitution2 a:hover{
+    text-decoration: underline;
+}
+
+/*Constitution*/
+
+
+
+/*Nous joindre*/
+
+
+.CR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.composition{
+    width: 520px;
+}
+
+.composition p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.composition ul li{
+    color: #333;
+    text-align: left;
+    line-height: 140%;
+}
+
+.admin{
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+
+.composition a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.composition a:hover{
+    text-decoration: underline;
+}
+
+.responsabilites{
+    width: 520px;
+}
+
+.responsabilites p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.responsabilites ul{
+    margin-bottom: 20px;
+}
+
+.responsabilites ul li{
+    color: #333;
+    line-height: 140%;
+}
+
+.responsabilites a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.responsabilites a:hover{
+    text-decoration: underline;
+}
+
+.NJ p{
+    margin-top: 20px;
+    color: #333;
+}
+
+
+/*Nous joindre*/
+
+/*Liste OR*/
+
+.containerListeOR{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.listeOR{
+    width: 1100px;
+}
+
+.titreListeOR{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.listeOR ul li{
+    color: #333;
+    line-height: 140%;
+}
+
+.listeOR a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.listeOR a{
+    text-decoration: underline;
+}
+
+/*Liste OR*/
+
+/*Régions*/
+
+.containerACRQ{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 500px;
+}
+
+.ACRQ{
+    width: 1100px;
+    font-size: 18px;
+}
+
+.titreACRQ{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.RR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ACRQ p{
+    color: #333;
+}
+
+.ACRQ a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.ACRQ a:hover{
+    text-decoration: underline;
+}
+
+.imgFB{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+
+.reunions{
+    width: 520px;
+}
+
+.reunions p{
+    padding-bottom: 15px;
+}
+
+.tableRU{
+    width: 100%;
+}
+
+.toutRU{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreRU{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.titreDateRU{
+    width: 35px;
+    text-align: left;
+}
+
+.titreAdresseRU{
+    width: 505px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.titreCRRU{
+    width: 260px;
+    text-align: right;
+    margin-left: 310px;
+}
+
+.barreSMP{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.dateRU{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.adresseRU{
+    width: 250px;
+    text-align: left;
+    margin-left: -330px;
+}
+
+.CCRU{
+    width: 100px;
+    text-align: left;
+}
+
+.donnesRU{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dateAdresseRU{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.responsables{
+    width: 520px;
+
+}
+
+.barreR{
+    width: 520px;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 20px;
+}
+
+.titreReunions, .titreResponsables{
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.responsable{
+    padding-bottom: 40px;
+}
+
+/*Régions*/
+
+/*À propos*/
+
+.containerAPropos{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.aPropos1{
+    width: 1100px;
+}
+
+.titreAPropos{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.aPropos1 p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.aPropos1 ol li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.aPropos1 a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.aPropos1 a:hover{
+    text-decoration: underline;
+}
+
+/*À propos*/
+
+/*Organigramme*/
+
+.containerOrganigramme{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.organigramme{
+    width: 1100px;
+}
+
+.titreOrganigramme{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.OL{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.org{
+    width: 680px;
+}
+
+.organigramme p{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.organigramme ol li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.organigramme ul li{
+    text-align: justify;
+    color: #333;
+    line-height: 140%;
+}
+
+.organigramme a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.organigramme a:hover{
+    text-decoration: underline;
+}
+
+.imgSOG{
+    width: 680px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.barreO{
+    width: 7px;
+    height: 40px;
+    background-color: silver;
+    opacity: 0.3;
+}
+
+.libre, .volonte, .ensemble{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.citO{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.titreStructures{
+    color: #317EAC;
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.imgACRQ{
+    width: 680px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.sousTitreO{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.ligneO{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.sousTitreNous{
+    color: #317EAC;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgNous{
+    width: 680px;
+    height: 290px;
+    margin-bottom: 20px;
+}
+
+.SM{
+    font-size: 18px;
+}
+
+
+.imgRR{
+    width: 680px;
+    height: 400px;
+}
+
+.sousTitreRR{
+    font-size: 22px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.titreNous{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sousTitreSN{
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.imgTN{
+    width: 680px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.imgCoor{
+    width: 600px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.sousTitreCoor{
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.imgCO{
+    width: 600px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.COO{
+    margin-top: 20px;
+}
+
+.imgCN{
+    width: 600px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.sousTitreCN{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.joindre{
+    font-size: 18px;
+}
+
+.sousTitreEthique{
+    color: #317EAC;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.imgRSR{
+    width: 600px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 90px;
+    width: 100%;
+  }
+
+.ORL{
+    position: relative;
+}
+
+.liste2{
+    width: 380px;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(192, 192, 192, 0.3);
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    position: fixed;
+    margin-left: -380px;
+}
+
+.liste2 ul li{
+    text-align: left;
+    line-height: 140%;
+}
+
+.SR, .SN{
+    margin-bottom: 10px;
+}
+
+.SR a, .SN a{
+    font-size: 18px;
+    color: #333;
+}
+
+.active1 a{
+    color: gray;
+    font-style: italic;
+}
+
+/*Organigramme*/
+
+
+/*Footer*/
+
+.footerU{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+}
+
+.footerC{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+}
+
+.footer1{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoAp{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgLogoFooter{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.aPropos{
+    color: white;
+}
+
+.elementFoot{
+    color: white;
+}
+
+.connectAdmin{
+    text-align: center;
+}
+
+.connectAdmin a{
+    color: white;
+    text-decoration: underline;
+}
+
+/*Footer*/
+
+/*Admin*/
+
+.containerPageA{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    min-height: 650px;
+}
+
+.pageA{
+    width: 1100px;
+    margin-top: 70px;
+}
+
+.titrePageA{
+    color: #317EAC;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.pageA p,
+.pageA ol li,
+.pageA ul li{
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+    line-height: 140%;
+}
+
+.pageA a{
+    text-decoration: none;
+    color: #2FA4E7
+    ;
+}
+
+.pageA a:hover{
+    text-decoration: underline;
+}
+
+/*Admin Login*/
+
+.continuer{
+    width: 100%;
+    height: 50px;
+    background-color: #dff0d8;
+    border: 1px #d6e9c6 solid;
+    border-radius: 4px;
+    color: #468847;
+    margin-bottom: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.connexion{
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    border: 1px silver solid;
+    border-radius: 4px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.formC label{
+    font-size: 18px;
+}
+
+.formC input[type=checkbox]{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formC input[type=email]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+.formC input[type=password]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.formC input[type=submit]{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    background-image: linear-gradient(#54b4eb, #2FA4E7 60%, #1d9ce5);
+    color: white;
+}
+
+/*Admin Login*/
+
+/*Admin Engagement*/
+
+.titrePageAC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nouvelleR{
+    font-size: 24px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.TC{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.tableEC1{
+    width: 100%;
+}
+
+.toutEC1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreEC1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 775px;
+}
+
+.titreCan{
+    width: 235px;
+    text-align: left;
+}
+
+.titreCirc{
+    width: 205px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titrePartiC{
+    width: 160px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.titreReponseC{
+    width: 200px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.barreSMP{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.nomCC{
+    margin-top: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.circC{
+    width: 200px;
+    text-align: left;
+}
+
+.partiC{
+    width: 150px;
+    text-align: left;
+}
+
+.reponseC{
+    width: 200px;
+    text-align: left;
+}
+
+.donnesC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modSup{
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+.modSup a:last-child{
+    color: darkred;
+}
+
+.veuillez{
+    color: silver;
+}
+
+.inputCand[type=text]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.reponsesCand{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputCand[type=submit]{
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #73A839;
+    border-color: #73A839;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+    border:0 none;
+    outline:0;
+}
+
+.sup{
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.circonsCand, .partiCand{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*Admin Engagement*/
+
+/*Admin ACRQ*/
+
+.lesRegionsA{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.laRegionA{
+    margin-right: 50px;
+}
+
+.regionA{
+    width: 210px;
+    height: 30px;
+    border: 1px silver solid;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.sousRegionA{
+display: flex;
+flex-direction: column;
+align-content: center;
+height: 100px;
+position: absolute;
+color: black;
+z-index: 1000;
+text-align: left;
+min-width: 210px;
+transition: all .3s ease;
+background-color: #f1f1f1;
+border: black;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+display: none;
+}
+
+.showR{
+    display: block;
+}
+
+.sousRegionA a{
+    color: black;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: block;
+}
+
+.sousRegionA a:hover, .elementNavA a:hover{
+    text-decoration: none;
+    background-color: #1995dc;
+}
+
+.ajouterResp{
+    width: 180px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+}
+
+.ajouterResp a{
+    color: white;
+    text-decoration: none;
+}
+
+.ajouterResp a:hover{
+    text-decoration: none;
+}
+
+.RP{
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    color: #317EAC;
+    border: 1px silver solid;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    padding-right: -40px;
+}
+
+.tableRP{
+    width: 100%;
+}
+
+.toutRP{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreRP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 820px;
+}
+
+.titreDateRP{
+    width: 235px;
+    text-align: left;
+}
+
+.titreLieuRP{
+    width: 205px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titreCRRP{
+    width: 160px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.dateRP{
+    margin-top: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lieuRP{
+    width: 200px;
+    text-align: left;
+}
+
+.CRRP{
+    width: 150px;
+    text-align: left;
+}
+
+
+.donnesRP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateHeureRP{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toutImg{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.titreImg{
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Admin ACRQ*/
+
+/*Admin Membres*/
+
+.signApp{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.tableMEM{
+    width: 100%;
+}
+
+.toutMEM{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreMEM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+}
+
+.titreNomMEM{
+    width: 35px;
+    text-align: left;
+}
+
+.titreCourrielMEM{
+    width: 205px;
+    text-align: left;
+    margin-left: 75px;
+}
+
+.titreTelephoneMEM{
+    width: 160px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.titreVilleMEM{
+    width: 200px;
+    text-align: left;
+    margin-left: 110px;
+}
+
+.titreCodePostalMEM{
+    width: 200px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.titreDateMEM{
+    width: 250px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.barreSMP{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.nomMEM{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courrielMEM{
+    width: 200px;
+    text-align: left;
+}
+
+.telephoneMEM{
+    width: 200px;
+    text-align: left;
+}
+
+.villeMEM{
+    width: 150px;
+    text-align: left;
+}
+
+.codePostalMEM{
+    width: 100px;
+    text-align: left;
+}
+
+.dateMEM{
+    width: 150px;
+    text-align: left;
+}
+
+.donnesMEM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+
+.idNomCourrielMEM{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.appSupMEM{
+    width: 270px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.appMEM{
+    width: 135px;
+    height: 25px;
+    background-color: #73A839;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+
+.supMEM{
+    width: 135px;
+    height: 25px;
+    background-image: linear-gradient(#c6352b, #A52C24 60%, #942820);
+    border-radius: 4px;  
+    margin-top: 5px;
+    padding-left: 4px;
+}
+
+.appMEM a, .supMEM a{
+    color: white;
+    font-size: 13px;
+}
+
+.signConf{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tableMEC{
+    width: 100%;
+}
+
+.toutMEC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreMEC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.titreStatusMEC{
+    width: 90px;
+    text-align: left;
+}
+
+.titreNomMEC{
+    width: 170px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.titreCourrielMEC{
+    width: 135px;
+    text-align: left;
+    margin-left: 85px;
+}
+
+.titreTelephoneMEC{
+    width: 160px;
+    text-align: left;
+    margin-left: 190px;
+}
+
+.titreVilleMEC{
+    width: 200px;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.titreCodePostalMEC{
+    width: 200px;
+    text-align: left;
+    margin-left: 70px;
+}
+
+.titreRegionMEC{
+    width: 50px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titreDateMEC{
+    width: 300px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.statusMEC{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomMEC{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courrielMEC{
+    width: 250px;
+    text-align: left;
+}
+
+.telephoneMEC{
+    width: 100px;
+    text-align: left;
+}
+
+.villeMEC{
+    width: 150px;
+    text-align: left;
+}
+
+.codePostalMEC{
+    width: 100px;
+    text-align: left;
+}
+
+.regionMEC{
+    width: 50px;
+    text-align: left;
+}
+
+.dateMEC{
+    width: 150px;
+    text-align: left;
+}
+
+.donnesMEC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+
+.idNomCourrielMEC{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Admin Membres*/
+
+/*Admin Ateliers*/
+
+.ajouterA{
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+}
+
+.ajouterA a{
+    color: white;
+    text-decoration: none;
+}
+
+.ajouterA a:hover{
+    text-decoration: none;
+}
+
+.tableAT{
+    width: 100%;
+}
+
+.toutAT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreAT{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.titreDateA{
+    width: 35px;
+    text-align: left;
+}
+
+.titreNomA{
+    width: 505px;
+    text-align: left;
+    margin-left: 180px;
+}
+
+.titreInscriptionsA{
+    width: 160px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.barreSMP{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.dateA{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomA{
+    width: 550px;
+    text-align: left;
+}
+
+.inscriptionsA{
+    width: 50px;
+    text-align: left;
+}
+
+.donnesA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dateNomA{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modSupA{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 14px;
+}
+
+.modifierA{
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(#04519b, #044687 60%, #033769);
+}
+
+.supprimerA{
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#c6352b, #A52C24 60%, #942820);
+}
+
+.modifierA a, .supprimerA a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.inputAM[type=text]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.inputTAM[type=textarea]{
+    width: 95%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.inputAM[type=textarea]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 12px;
+    opacity: 1;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+/*Admin Ateliers*/
+
+/*Admin Inscriptions*/
+
+.tableIA{
+    width: 100%;
+}
+
+.toutIA{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreIA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 735px;
+}
+
+.titreNomI{
+    width: 35px;
+    text-align: left;
+}
+
+.titreCourrielI{
+    width: 505px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.titreTelephoneI{
+    width: 160px;
+    text-align: left;
+    margin-left: 310px;
+}
+
+.barreSMP{
+    width: 100%;
+    height: 0.01px;
+    opacity: 0.5;
+    background-color: silver;
+}
+
+.barreSMT{
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+
+.nomI{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courrielI{
+    width: 150px;
+    text-align: left;
+}
+
+.telephoneI{
+    width: 100px;
+    text-align: left;
+}
+
+.donnesI{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nomCourrielI{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Admin Inscriptions*/
+
+/*Admin Appel*/
+
+.tableAEC{
+    width: 100%;
+}
+
+.toutAEC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreAEC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.titrePrenomAEC{
+    width: 90px;
+    text-align: left;
+}
+
+.titreNomAEC{
+    width: 170px;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.titreCourrielAEC{
+    width: 135px;
+    text-align: left;
+    margin-left: 90px;
+}
+
+.titreTelephoneAEC{
+    width: 160px;
+    text-align: left;
+    margin-left: 190px;
+}
+
+.titreVilleAEC{
+    width: 200px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.titreCodePostalAEC{
+    width: 200px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.titreDateAEC{
+    width: 300px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.prenomAEC{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomAEC{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courrielAEC{
+    width: 220px;
+    text-align: left;
+}
+
+.telephoneAEC{
+    width: 100px;
+    text-align: left;
+}
+
+.villeAEC{
+    width: 100px;
+    text-align: left;
+}
+
+.codePostalAEC{
+    width: 100px;
+    text-align: left;
+}
+
+
+.dateAEC{
+    width: 130px;
+    text-align: left;
+}
+
+.donnesAEC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+
+.idNomCourrielAEC{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.supprimerPart{
+    width: 63px;
+    height: 25px;
+    background-image: linear-gradient(#c6352b, #A52C24 60%, #942820);
+    border-radius: 4px;  
+    margin-top: 5px;
+    padding-left: 4px;
+}
+
+.supprimerPart a{
+    color: white;
+    font-size: 13px;
+}
+
+/*Admin Appel*/
+
+@media only screen and (max-width: 992px) {
+
+    body{
+        width: 100%;
+    }
+
+    .premier{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-left: 10%;
+    }
+    
+    .buttonNav{
+        margin-right: 10%;
+    }
+
+    #navPrinc1{
+        display: none;
+    }
+
+    #navPrinc2{
+        display: none;
+        position: absolute;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 0px;
+        list-style-type: none;
+    }
+
+    .navPrincU{
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+        background-image:linear-gradient(#04519b, #044687 60%, #033769);
+        list-style-type: none;
+        display: none;
+    }
+
+   
+
+    .elementNav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        margin-left: 5%;
+        padding-left: 30px;
+        list-style-type: none;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    
+    }
+
+    .sous3,
+    .sous4{
+   /* height: 0;
+    opacity: 0;*/
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: relative;
+        margin-left: 120px;
+        
+        font-size: 14px;
+        color: white;
+        z-index: 1000;
+        text-align: left;
+        min-width: 150px;
+    }
+
+    .sous3 a,
+    .sous4 a{
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sous3 a:hover,
+.sous4 a:hover{
+    background-color:darkblue;
+}
+
+    .affiche{
+        display: block;
+    }
+
+    .buttonNav{
+        display: block;
+    }
+
+    .containerPage{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .page{
+        width: 80%;
+    }
+
+    /*Accueil*/
+
+    /*.imgBanniere{
+        width: 100%;
+        height: auto;
+        padding-top: 45px;
+    }*/
+
+    .premierBloc{
+        width: 100%;
+    }
+
+    
+.sondage2{
+    width: 500px;
+    height: auto;
+    border: 1px solid lightskyblue;
+}
+
+
+.imgConstituons{
+    width: 100%;
+}
+
+.deuxiemeBloc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.troisiemeBloc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 30px;
+}
+
+.videoRS{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /*Accueil*/
+
+    /*Règlements*/
+
+    .PDF{
+        width: 100%;
+    }
+
+    .SRE{
+        width: 100%;
+    }
+
+    /*Règlements*/
+
+    /*Manifeste*/
+
+    .CS{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .constitution1{
+        width: 100%;
+    }
+
+    .titreConstitution{
+        width: 100%;
+    }
+
+    .signatures{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .tableSM{
+        width: 100%;
+    }
+
+    .nomDate{
+        width: 100%;
+    }
+
+    .barreSMT{
+        width: 100%;
+        height: 0.01px;
+        opacity: 0.5;
+        background-color: silver;
+    }
+    
+    .SF{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgFD{
+        display: none;
+    }
+
+    .jeSigne{
+        width: 100%;
+        font-size: 18px;
+        color: #333;
+        text-align: justify;
+    }
+    
+    .TF{
+        width: 100%;
+    }
+    
+    .texteJSP2{
+        width: 100%;
+    }
+    
+    .imgFD{
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }
+
+    .formS{
+        width: 100%;
+    }
+
+    .form1{
+        width: 100%;
+    }
+    
+    .lesInputs{
+        width: 100%;
+    }
+    
+    
+
+    /*Manifeste*/
+
+    /*Constat*/
+
+    .barreCit{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+      /*Constat*/
+
+      /*Bibliothèque*/
+
+    .DC{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .documents{
+        width: 100%;
+    }
+    
+    .constitutions{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+      /*Bibliothèque*/
+
+      /*Médiathèque*/
+
+      .bloc1, .bloc2, .bloc3, .bloc4, .bloc5, .bloc6, .bloc7, .bloc8, .bloc9{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .blocVideo{
+        margin-top: 40px;
+    }
+
+      /*Médiathèque*/
+
+      /*Promouvoir*/
+
+      .PT{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .porter{
+        width: 100%;
+    }
+
+    .tracts{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+      /*Promouvoir*/
+
+      /*Discutoire*/
+
+      .bienvenue{
+        width: 100%;
+    }
+
+      /*Discutoire*/
+
+      /*Médias*/
+
+      .containerMedias{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .medias{
+        width: 80%;
+    }
+
+    /*Médias*/
+
+    /*Réalisations*/
+
+    .containerConstituons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .constituons1{
+        width: 80%;
+    }
+
+    /*Réalisations*/
+
+    /*Nous joindre*/
+
+    .CR{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .composition{
+        width: 100%;
+    }
+    
+    .responsabilites{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /*Nous joindre*/
+
+    /*Engagement*/
+
+    .unissons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 22px;
+        width: 100%;
+        height: 70px;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+
+    /*Engagement*/
+
+    /*L'appel*/
+
+    .AF{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    
+    .appelQuebec{
+        width: 100%;
+    }
+    
+    .titreAQ{
+        width: 100%;
+        height: 100px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 140%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .titreAQ2{
+        color: #317EAC;
+        font-size: 22px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .appel1 p{
+        text-align: justify;
+        color: #333;
+        line-height: 140%;
+    }
+    
+    .signez a{
+        font-size: 18px;
+    }
+    
+    .appel1 a{
+        text-decoration: none;
+        color: #2FA4E7
+        ;
+    }
+    
+    .appel1 a:hover{
+        text-decoration: underline;
+    }
+    
+    .CPI{
+        width: 100%;
+        height: 70px;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .CPI a{
+        color: #b94a48;
+        text-decoration: none;
+    }
+    
+    .CPI a:hover{
+        text-decoration: underline;
+    }
+    
+    .formLiens{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .titreSA{
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    
+    .barreSA{
+        width: 100%;
+        height: 1px;
+        background-color: silver;
+        margin-bottom: 20px;
+    }
+    
+    .texteSA{
+        width: 100%;
+        color: gray;
+    }
+    
+    .form2{
+        width: 100%;
+        height: 470px;
+        background-color: rgba(192, 192, 192, 0.3);
+        margin-top: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border: 1px solid silver;
+        border-radius: 5px;
+    }
+    
+    
+    
+    .form2 input[type=text]{
+        width: 95%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        margin-left: 12px;
+        opacity: 1;
+        display: inline-block;
+        border: 1px solid silver;
+        border-radius: 4px;
+        box-sizing: border-box;
+    
+    }
+    
+    .nomComplet{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nomComplet input[type=text]{
+        width: 95%;
+    }
+    
+    .prenom, .nom{
+    
+        display: flex;
+        flex-direction: column;
+        display: inline-block;
+    }
+    
+    .form2 input[type=submit]{
+        width: 80px;
+        height: 40px;
+        margin-top: 20px;
+        background-color: #73A839;
+        border-color: #73A839;
+        color: white;
+        border-radius: 4px;
+        box-shadow: none;
+        border:0 none;
+        outline:0;
+    }
+    
+    .NE{
+
+        width: 100%;
+        height: 100px;
+        font-size: 17px;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+    
+    .liens{
+        width: 100%;
+        height: 200px;
+    }
+
+
+    /*L'appel*/
+
+    /*Devenir*/
+
+    .containerDevenir{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        height: 450px;
+    }
+    
+    .devenir{
+        width: 80%;
+    }
+
+    /*Devenir*/
+
+    /*Constitution*/
+
+    .containerConstitution2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .constitution2{
+        width: 80%;
+    }
+
+    .constitution2 p{
+        text-align: justify;
+        color: #333;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    /*Constitution*/
+
+    /*organigramme*/
+
+    .OL{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .org{
+        width: 100%;
+    }
+
+    .ORL{
+        display: none;
+    }
+
+    /*organigramme*/
+
+}
+
+@media only screen and (max-width: 480px) {
+
+body{
+width: 480px;
+height: 100%;
+}
+
+/*header*/
+
+header{
+display: flex;
+flex-direction: column;
+width: 460px;
+}
+
+.elementNav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+    .sous3,
+    .sous4{
+   /* height: 0;
+    opacity: 0;*/
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: relative;
+        margin-left: 0px;
+        font-size: 14px;
+        color: white;
+        z-index: 1000;
+        text-align: left;
+    }
+
+    .affiche{
+        display: block;
+    }
+
+    /*Header*/
+
+    /*Accueil*/
+
+    .premierBloc{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sondage2{
+        width: 80%;
+        height: auto;
+        border: 1px solid lightskyblue;
+    }
+    
+    
+    .imgConstituons{
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .deuxiemeBloc{
+        margin-left: 20px;
+    }
+
+    .imgAteliers{
+        width: 90%;
+        height: 75px;
+        margin-bottom: 30px;
+    }
+    
+    .imgRencontres{
+        width: 90%;
+        height: 75px;
+    }
+
+    .imgManifeste{
+        width: 90%;
+        height: 75px;
+        padding-top: 20px;
+    }
+    
+    .imgMembre{
+        width: 90%;
+        height: 75px;
+    }
+
+    .texteVideo{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .videoC1{ 
+        width: 100%;
+        height: auto;
+    }
+
+    .regions{
+        width: 480px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .regionsPar3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    
+    .regionsPar2{
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    
+    .region{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #333;
+        z-index: 0;
+        position: relative;
+        
+    }
+    
+    
+    
+    .regionPlus{
+        width: 100px;
+        height: 120px;
+        border: 1px solid #333;
+        z-index: 0;
+        position: relative;
+    }
+    
+    .region a, 
+    .regionPlus a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .imgRegion{
+        width: 90px;
+        height: 50px;
+        padding: 5px;
+    
+    }
+
+    .texteRegion{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #317EAC;
+        opacity: 0.7;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+      }
+      
+      .region:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+    
+      .regionPlus:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+      
+      .text {
+        color: #ffffff;
+        font-size: 12px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+    /*Accueil*/
+
+    /*Fil d'Ariane*/
+
+    .ariane{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        background-color: #f5f5f5;
+        color: gray;
+        font-size: 18px;
+        border-radius: 4px;
+        margin-top: 30px;
+    }
+
+    /*Fil d'Ariane*/
+      
+    /*Mission*/
+
+    .navPM{
+        height: auto;
+    }
+
+    .navMission{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Mission*/
+
+
+    /*Médiathèque*/
+
+    .blocVideo{
+        width: 90%;
+        height: auto;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .videoM{
+        width: 95%;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /*Médiathèque*/
+
+    /*Sondage*/
+
+    .sond{
+        width: 100%;
+    }
+
+    /*Sondage*/
+
+    /*Discutoire*/
+
+    .imgMumble{
+        width: 100%;
+        height: auto;
+    }
+
+    /*Discutoire*/
+
+    /*Réalisation*/
+    
+    .listePC{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listePCC{
+        margin-top: 10px;
+    }
+
+    .videoC{
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /*Réalisation*/
+
+    /*Engagement*/
+
+    .unissons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        width: 100%;
+        height: auto;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+
+    .engagement1 p a{
+        text-decoration: none;
+        color: #2FA4E7
+        ;
+        text-align: left;
+    }
+
+    /*Engagement*/
+
+    /*L'appel*/
+
+    .titreAQ{
+        height: auto;
+    }
+
+    .NE{
+        height: 170px;
+    }
+
+    /*L'appel*/
+
+    /*Régions*/
+
+    .RR{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Régions*/
+
+    /*Organigramme*/
+
+    .imgSOG,
+    .imgACRQ,
+    .imgNous,
+    .imgRR,
+    .imgTN,
+    .imgCoor,
+    .imgCO,
+    .imgCN,
+    .imgRSR{
+        width: 100%;
+        height: auto;
+    }
+
+    /*Organigramme*/
+
+    footer{
+        width: 100%;
+    }
+
+
+}
