@@ -38,10 +38,8 @@
             
                 <label for="nomA">Nom</label><br>
                 <input class="inputAM" type="text" id="nomAM" name="nomAM" value="<?= $modAtelier->name ?>"><br>
-                <label for="dateAM">Date de l'atelier</label><br>
+                <label for="dateAM">Date et heure de l'atelier</label><br>
                 <input class="inputAM" type="text" id="dateAM" name="dateAM" value="<?= $modAtelier->starts_at ?>"><br>
-                <label for="heureAM">Heure de l'atelier</label><br>
-                <input class="inputAM" type="text" id="heureAM" name="heureAM" value="<?= $modAtelier->ends_at ?>"><br>
                 <label for="descriptionAM">Description</label><br>
                 <input class="inputTAM" type="textarea" id="descriptionAM" name="descriptionAM" value="<?= $modAtelier->description ?>"><br>
                 <label for="animationAM">Animation</label><br>

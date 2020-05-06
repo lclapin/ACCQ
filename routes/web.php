@@ -164,7 +164,7 @@ Route::group(['middleware' => 'auth'], function(){
     
     Route::post('admin/ateliersA/{id}', 'AdminController@modifierAtelier')->name('modifierAtelier');
     
-    Route::get('admin/ateliersA/{id}', 'AdminController@supAtelier')->name('supAtelier');
+    Route::get('supAtelier/{id}', 'AdminController@supAtelier')->name('supAtelier');
     
     Route::get('inscriptions/{id}', 'AdminController@inscriptions')->name('inscriptions');
     

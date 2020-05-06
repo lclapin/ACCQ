@@ -34,10 +34,8 @@
             
                 <label for="nomAA">Nom</label><br>
                 <input class="inputAM" type="text" id="nomAA" name="nomAA"><br>
-                <label for="dateAM">Date de l'atelier</label><br>
+                <label for="dateAM">Date et heure de l'atelier</label><br>
                 <input class="inputAM" type="text" id="dateAA" name="dateAA"><br>
-                <label for="heureAA">Heure de l'atelier</label><br>
-                <input class="inputAM" type="text" id="heureAA" name="heureAA"><br>
                 <label for="descriptionAA">Description</label><br>
                 <input class="inputTAM" type="textarea" id="descriptionAA" name="descriptionAA"><br>
                 <label for="animationAA">Animation</label><br>

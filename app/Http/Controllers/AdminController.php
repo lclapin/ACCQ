@@ -28,6 +28,8 @@ use App\Http\Requests\ApprobationMembreRequest;
 
 use App\Http\Requests\AuthentificationRequest;
 
+use App\Http\Requests\ApprobationUsagerRequest;
+
 use Auth;
 
 
@@ -70,7 +72,7 @@ class AdminController extends Controller
     //}
 
 
-    public function authentification(AuthentificationRequest $request)
+    /*public function authentification(AuthentificationRequest $request)
     {
         
 
@@ -93,14 +95,9 @@ class AdminController extends Controller
 
             return view('admin/login', ['authentifications' => $authentifications]);
         }
+
         
-
-
-       // $ateliers = DB::select('select id, starts_at, name, available_slots from workshops');
-
-       // return view('admin/ateliersA', ['ateliers' => $ateliers]);
-        
-    }
+    }*/
 
 
     public function home()
@@ -459,16 +456,16 @@ class AdminController extends Controller
         ->where('id', $id)
         ->get();
 
-        foreach($nouveauxMembresA as $nouveauMembreA)
+        foreach($nouveauxMembresA as $nouvelUsagerA)
 		    {
-        $nom = $nouveauMembreA->name;
-        $courriel = $nouveauMembreA->email;
-        $telephone = $nouveauMembreA->phone;
-        $ville = $nouveauMembreA->city;
-        $codePostal = $nouveauMembreA->postal_code;
-        $status = $nouveauMembreA->status;
-        $region = $nouveauMembreA->no_region;
-        $cree = $nouveauMembreA->created_at;
+        $nom = $nouvelUsagerA->name;
+        $courriel = $nouvelUsagerA->email;
+        $telephone = $nouvelUsagerA->phone;
+        $ville = $nouvelUsagerA->city;
+        $codePostal = $nouvelUsagerA->postal_code;
+        $status = $nouvelUsagerA->status;
+        $region = $nouvelUsagerA->no_region;
+        $cree = $nouvelUsagerA->created_at;
         $confirme = $request->input('CURRENT_TIMESTAMP');
             
  
@@ -539,27 +536,35 @@ class AdminController extends Controller
     public function ajoutAtelier(NouvelAtelierRequest $request)
     {
 
+        $modAteliers = DB::table('workshops')
+        ->select(DB::raw('id, starts_at, name, description, animation, expertise, available_slots'))
+        ->get();
+
         $nom = $request->input('nomAA');
-        $date = $request->input('dateAA');
-        $heure = $request->input('heureAA');
+        $date = $request->input('dateAA');;
         $description = $request->input('descriptionAA');
         $animation = $request->input('animationAA');
         $expertise = $request->input('expertiseAA');
         $available = $request->input('availableAA');
  
-        $data = array("name"=>$nom,"starts_at"=>$date,"ends_at"=>$heure,"description"=>$description,"animation"=>$animation,"expertise"=>$expertise,"available_slots"=>$available);
+        $data = array("name"=>$nom,"starts_at"=>$date,"description"=>$description,"animation"=>$animation,"expertise"=>$expertise,"available_slots"=>$available);
 
         DB::table('workshops')->insert($data);
 
+        $countInscriptions = DB::table('workshop_registrations')
+        ->join('workshops', 'workshops.id', '=', 'workshop_registrations.workshop_id')
+        ->where('workshops.id', 'workshop_registrations.workshop_id')
+        ->count();
+
         $ateliers = DB::select('select id, starts_at, name, available_slots from workshops');
 
-        return view('admin/ateliersA', ['ateliers' => $ateliers]);
+        return view('admin/ateliersA', ['ateliers' => $ateliers], ['countInscriptions' => $countInscriptions]);
         
     }
 
     public function insertModifierAtelier($id)
     {
-        $modAteliers = DB::table('workshops')->select(DB::raw('id, starts_at, ends_at, name, description, animation, expertise, available_slots'))->where('id', $id)->get();
+        $modAteliers = DB::table('workshops')->select(DB::raw('id, starts_at, name, description, animation, expertise, available_slots'))->where('id', $id)->get();
 
         return view('admin/modifierAtelier', ['modAteliers' => $modAteliers]);
         
@@ -571,7 +576,6 @@ class AdminController extends Controller
                 ->where('id', $id)
                 ->update(['name' =>$request['nomAM'],
                 'starts_at'=>$request['dateAM'],
-                'ends_at'=>$request['heureAM'],
                 'description'=>$request['descriptionAM'],
                 'animation'=>$request['animationAM'],
                 'expertise'=>$request['expertiseAM'],
@@ -579,10 +583,14 @@ class AdminController extends Controller
                 'updated_at'=>$request['CURRENT_TIMESTAMP']
                 ]);
             
+                $countInscriptions = DB::table('workshop_registrations')
+                ->join('workshops', 'workshops.id', '=', 'workshop_registrations.workshop_id')
+                ->where('workshops.id', 'workshop_registrations.workshop_id')
+                ->count();
 
                 $ateliers = DB::select('select id, starts_at, name, available_slots from workshops');
 
-                return view('admin/ateliersA', ['ateliers' => $ateliers]);
+                return view('admin/ateliersA', ['ateliers' => $ateliers], ['countInscriptions' => $countInscriptions]);
         
     }
 
@@ -590,9 +598,14 @@ class AdminController extends Controller
     {
         DB::table('workshops')->where('id', $id)->delete();
 
+        $countInscriptions = DB::table('workshop_registrations')
+        ->join('workshops', 'workshops.id', '=', 'workshop_registrations.workshop_id')
+        ->where('workshops.id', 'workshop_registrations.workshop_id')
+        ->count();
+
         $ateliers = DB::select('select id, starts_at, name, available_slots from workshops');
 
-        return view('admin/ateliersA', ['ateliers' => $ateliers]);
+        return view('admin/ateliersA', ['ateliers' => $ateliers], ['countInscriptions' => $countInscriptions]);
         
     }
 
@@ -861,5 +874,4 @@ class AdminController extends Controller
         return view('admin/listeCandidats', ['candidats2' => $candidats2]);
         
     }
-
 }
