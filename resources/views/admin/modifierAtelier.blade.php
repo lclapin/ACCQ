@@ -31,7 +31,8 @@
             <?php
 		        foreach($modAteliers as $modAtelier)
 		        {
-		    ?>
+            ?>
+            <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
             <form class="form3" method="post" action ="{{ route('modifierAtelier', $modAtelier->id) }}" >
             @csrf
             <input type="hidden" name="token" value="{{ csrf_token() }}">
@@ -41,7 +42,9 @@
                 <label for="dateAM">Date et heure de l'atelier</label><br>
                 <input class="inputAM" type="text" id="dateAM" name="dateAM" value="<?= $modAtelier->starts_at ?>"><br>
                 <label for="descriptionAM">Description</label><br>
-                <input class="inputTAM" type="textarea" id="descriptionAM" name="descriptionAM" value="<?= $modAtelier->description ?>"><br>
+                <textarea class="inputTAM" id="descriptionAM" name="descriptionAM">
+                <?= $modAtelier->description ?>
+                </textarea><br>
                 <label for="animationAM">Animation</label><br>
                 <input class="inputAM" type="text" id="aniamtionAM" name="animationAM" value="<?= $modAtelier->animation ?>"><br>
                 <label for="expertiseAM">Expertise</label><br>
@@ -54,6 +57,13 @@
             ?>    
             <input class="inputCand" type="submit" value="Enregistrer">
             </form>
+
+            <script>
+                CKEDITOR.replace( 'descriptionAM', {
+                filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
+                filebrowserUploadMethod: 'form'
+                });
+            </script>
 
         </div>
 

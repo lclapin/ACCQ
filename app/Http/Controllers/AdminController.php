@@ -516,14 +516,21 @@ class AdminController extends Controller
     public function ateliersA()
     {
 
+        $inscriptions = DB::table('workshop_registrations')
+        ->select(DB::raw('workshops.id as idW'))
+        ->join('workshops', 'workshops.id', '=', 'workshop_registrations.workshop_id')
+        ->where('workshops.id', 'workshop_registrations.workshop_id')
+        ->get();
+
         $countInscriptions = DB::table('workshop_registrations')
         ->join('workshops', 'workshops.id', '=', 'workshop_registrations.workshop_id')
         ->where('workshops.id', 'workshop_registrations.workshop_id')
         ->count();
+
         $ateliers = DB::select('select id, starts_at, name, available_slots from workshops');
 
 
-        return view('admin/ateliersA', ['ateliers' => $ateliers], ['countInscriptions' => $countInscriptions]);
+        return view('admin/ateliersA',  ['inscriptions' => $inscriptions], ['ateliers' => $ateliers], ['countInscriptions' => $countInscriptions]);
         
     }
 

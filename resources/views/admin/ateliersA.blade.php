@@ -42,7 +42,16 @@
 
 		<tr class = 'dateNomA'>	
         <td class="donnesA"><div class="dateA"><?= $atelier->starts_at ?></div>
-        <div class="nomA"><?= $atelier->name ?></div><div class="inscriptionsA"> <a href="{{ route('inscriptions', $atelier->id) }}"><?= $countInscriptions ?>/<?= $atelier->available_slots ?></a></div>
+        <div class="nomA"><?= $atelier->name ?></div><div class="inscriptionsA"> <a href="{{ route('inscriptions', $atelier->id) }}">
+        <?php
+        foreach($inscriptions as $inscription)
+		{
+        if($atelier->id == $inscription->idW){
+         echo "$countInscriptions";
+        }
+    }
+         ?>/
+        <?= $atelier->available_slots ?></a></div>
         <div class="modSupA"><div class="modifierA"><a  href="{{ route('insertModifierAtelier', $atelier->id) }}">Modifier</a></div><div class="supprimerA"><a class="supC" href="{{ route('supAtelier', $atelier->id) }}">Supprimer</a></div></div></td>
         <td class="barreSMT"></td>
         </tr>

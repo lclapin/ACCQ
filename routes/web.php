@@ -195,6 +195,8 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('ajoutCandidat', 'AdminController@ajoutCandidat');
     
     Route::get('admin/listeCandidats/{id}', 'AdminController@supCand')->name('supCand');
+
+    Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
   
   
   // and your other routes which you wanna protect
